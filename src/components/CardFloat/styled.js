@@ -7,6 +7,8 @@ export const CardFloat = styled.div`
   background-color: var(--color-white);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
 
   animation: moveInTop 1s ease-out;

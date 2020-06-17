@@ -9,7 +9,6 @@ interface Props {
 const ChartLine: React.FC<Props> = ({ height, data }) => {
   return (
     <Line
-      height={height}
       data={data ?? null}
       options={{
         responsive: true,

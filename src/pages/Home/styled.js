@@ -39,7 +39,6 @@ export const Main = styled.main``;
 export const SectionSummary = styled.section`
   display: flex;
   justify-content: space-around;
-  max-height: 300px;
 `;
 
 export const CardsSummary = styled.div`
@@ -60,7 +59,6 @@ export const GraphSummary = styled.div`
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   animation: appear 2s ease-out 1s;
   animation-fill-mode: backwards;
@@ -75,22 +73,15 @@ export const GraphSummary = styled.div`
     }
   }
 
-  position: relative;
-
   h3 {
     text-align: center;
     font-size: 2.4rem;
     line-height: 3.4rem;
     font-weight: bold;
     color: var(--color-grey-dark);
-    position: absolute;
-    width: 100%;
-    top: 0;
   }
 
   canvas {
-    position: absolute;
-    padding: 10px;
     height: 100%;
     width: 100%;
   }
