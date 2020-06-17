@@ -20,6 +20,7 @@ const SimpleMap = ({ children }) => {
                 width: "200px",
                 align: "center",
                 background: "rgba(255,255,255,.3)",
+                padding: "20px",
               }}
             >
               <p>
