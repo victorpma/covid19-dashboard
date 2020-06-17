@@ -57,9 +57,6 @@ const regionMidwest = ["MS", "MT", "GO", "DF"];
 const Home = () => {
   const [summaryGlobal, setSummaryGlobal] = useState<SummaryGlobal>();
   const [statsUFBrazil, setStatsUFBrazil] = useState<StatsUF[]>([]);
-  const [casesConfirmedBrazil, setCasesConfirmedBrazil] = useState<
-    ChartData<Chart.ChartData>
-  >();
   const [casesRegionNorth, setCasesRegionNorth] = useState<number>(0);
   const [casesRegionNortheast, setCasesRegionNortheast] = useState<number>(0);
   const [casesRegionSoutheast, setCasesRegionSoutheast] = useState<number>(0);
@@ -109,33 +106,6 @@ const Home = () => {
         ufsSouth.reduce((sum: any, uf: any) => sum + uf.cases, 0)
       );
     });
-  }, []);
-
-  useEffect(() => {
-    apiGlobal
-      .get(
-        "country/brazil/status/confirmed/live?from=2020-01-01T00:00:00Z&to=2020-04-14T00:00:00Z"
-      )
-      .then((response) => {
-        const casesBrazil = {
-          labels: response.data.map((item: any) => {
-            return item.Date;
-          }),
-          datasets: [
-            {
-              label: "Casos confirmados",
-              backgroundColor: "rgba(255,0,0,.5)",
-              borderColor: "#fff",
-              borderWidth: 2,
-              data: response.data.map((item: any) => {
-                return item.Cases;
-              }),
-            },
-          ],
-        };
-
-        setCasesConfirmedBrazil(casesBrazil);
-      });
   }, []);
 
   useEffect(() => {
