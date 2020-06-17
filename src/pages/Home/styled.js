@@ -81,6 +81,11 @@ export const GraphSummary = styled.div`
     font-weight: bold;
     color: var(--color-grey-dark);
   }
+
+  canvas {
+    height: 100%;
+    width: 100%;
+  }
 `;
 
 export const SectionStatsCase = styled.section`
