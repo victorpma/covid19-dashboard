@@ -8,8 +8,6 @@ import ChartLine from "../../components/Charts/Line";
 import ChartBar from "../../components/Charts/Bar";
 import Map from "../../components/Map/StaticsMap";
 
-import { ChartData } from "react-chartjs-2";
-
 import * as S from "./styled";
 
 interface Country {

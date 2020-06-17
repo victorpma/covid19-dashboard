@@ -23,7 +23,11 @@ const SimpleMap = ({ children }) => {
               }}
             >
               <p>
-                <img height="15px" src={country.countryInfo.flag} />
+                <img
+                  height="15px"
+                  src={country.countryInfo.flag}
+                  alt="Bandeira País"
+                />
                 <b> {country.country}</b>
                 <br />
                 População: <b>{country.population.toLocaleString("pt")}</b>
