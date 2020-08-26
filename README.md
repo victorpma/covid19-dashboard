@@ -2,7 +2,7 @@
 
 ## About this project
 Project built for Machine Learning discipline, with intention of analyzer the 
-datas from external API's and identify the relevance attributes for visualiaze 
+datas from external API's and identify the relevance attributes for visualize 
 in graphics.
 
 ## Functionalities
